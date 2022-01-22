@@ -1,0 +1,6 @@
+I) index.html			      <div id='root'></div>
+
+  A) index.js			      initalState, reducer, store
+
+    1) AddPersonForm		return form, handleSubmit
+    2) ContactsList		  <ul><li>{returnList}</li></ul>
