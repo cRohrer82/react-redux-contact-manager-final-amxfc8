@@ -1,0 +1,111 @@
+h1,
+p {
+  font-family: Lato;
+  padding-left: 22%;
+}
+ul {
+  padding: 0;
+}
+li {
+  list-style-type: none;
+}
+div {
+  list-style-type: none;
+  background-color: rgba(61, 175, 150, 0.411);
+  border-radius: 10px;
+  display: inline-block;
+  width: 90%;
+}
+form {
+  margin-left: 2%;
+  margin-right: auto;
+  margin-top: 2%;
+}
+hr {
+  background-color: gray;
+  border-style: groove;
+  height: 2px;
+  width: 95%;
+}
+
+div div {
+  list-style-type: none;
+  padding-left: 1%;
+  margin: 10px;
+  background-color: rgba(61, 175, 150, 0.411);
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.addButton {
+  margin-left: 5%;
+  width: 80%;
+}
+
+.contactName {
+  font-size: 20px;
+  width: 30%;
+}
+
+.contactAddress {
+  padding-left: 1%;
+  padding-right: 1%;
+  width: fit-content;
+}
+
+.contactPhoneNumber {
+  padding-left: 1%;
+  padding-right: 1%;
+  float: right;
+  width: fit-content;
+}
+
+.contactName,
+.contactAddress,
+.contactPhoneNumber {
+  border-bottom-style: groove;
+  border-bottom-width: 3px;
+}
+
+.contactName:hover,
+.contactAddress:hover,
+.contactPhoneNumber:hover {
+  cursor: pointer;
+  /*border-bottom-style: groove;
+  border-bottom-width: 1px;
+  
+  padding-left: 1%;
+  padding-right: 1%;
+  width: fit-content;*/
+}
+
+.contactName:active,
+.contactAddress:active,
+.contactPhoneNumber:active {
+  border-bottom-style: none;
+  -webkit-transform: translate(0px, 3px);
+  transform: translate(0px, 3px);
+  /*padding-left: 1%;
+  padding-right: 1%;*/
+}
+
+.contactsList {
+  float: left;
+  width: 85%;
+}
+
+.formInput {
+  display: block;
+  margin-bottom: 2.5%;
+  width: 90%;
+}
+
+.newPersonForm {
+  float: right;
+  width: 10%;
+}
+
+#top {
+  width: 50%;
+  height: 4px;
+}

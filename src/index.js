@@ -4,7 +4,7 @@ import ContactsList from './components/ContactsList';
 import PersonForm from './components/PersonForm';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
-import './style.css';
+import './style/style.css';
 
 const initialState = {
   contacts: ['James Smith', 'Thomas Anderson', 'Bruce Wayne'],

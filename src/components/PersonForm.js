@@ -31,33 +31,34 @@ function PersonForm(props) {
 
   return (
     <>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          class="formInput"
-          placeholder="Add new contact"
-          onChange={handlePersonChange}
-          value={person}
-        />
-        <input
-          type="text"
-          class="formInput"
-          placeholder="Add new address"
-          onChange={handleAddressChange}
-          value={address || ''}
-        />
-        <input
-          type="text"
-          class="formInput"
-          placeholder="Add new phone number"
-          onChange={handleNumberChange}
-          value={number || ''}
-        />
-        <button type="submit" class="addButton">
-          Add
-        </button>
-      </form>
-      <hr id="top" />
+      <div class="newPersonForm">
+        <form onSubmit={handleSubmit}>
+          <input
+            type="text"
+            class="formInput"
+            placeholder="Add new contact"
+            onChange={handlePersonChange}
+            value={person}
+          />
+          <input
+            type="text"
+            class="formInput"
+            placeholder="Add new address"
+            onChange={handleAddressChange}
+            value={address || ''}
+          />
+          <input
+            type="text"
+            class="formInput"
+            placeholder="Add new phone number"
+            onChange={handleNumberChange}
+            value={number || ''}
+          />
+          <button type="submit" class="addButton">
+            Add
+          </button>
+        </form>
+      </div>
     </>
   );
 }
