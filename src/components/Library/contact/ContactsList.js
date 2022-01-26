@@ -1,13 +1,8 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
-import editPersonNumber from '../actions';
-import { PersonForm } from './PersonForm';
+import { ListHeader } from '.';
 
 function ContactsList(props) {
-  const [person, setPerson] = useState('');
-  const [address, setAddress] = useState('');
-  const [number, setNumber] = useState('');
-
   function handleNameClick(e) {}
 
   const arr = props.contacts;
@@ -32,19 +27,20 @@ function ContactsList(props) {
 
   for (var i = 0; i < listContacts.length; i++) {
     returnList.push(
-      <>
-        <div class="contactsList">
-          <li>
-            {listContacts[i]}
-            {listAddresses[i]}
-            {listPhoneNumbers[i]}
-          </li>
-        </div>
-      </>
+      <li>
+        {listContacts[i]}
+        {listAddresses[i]}
+        {listPhoneNumbers[i]}
+      </li>
     );
   }
 
-  return <ul>{returnList}</ul>;
+  return (
+    <>
+      <ListHeader />
+      <ul>{returnList}</ul>
+    </>
+  );
 }
 
 function mapStateToProps(state) {

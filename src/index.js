@@ -1,9 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ContactsList from './components/ContactsList';
-import PersonForm from './components/PersonForm';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
+import { PagePanel } from './components/Library/page';
 import './style/style.css';
 
 const initialState = {
@@ -34,8 +33,10 @@ function reducer(state = initialState, action) {
 const store = createStore(reducer);
 ReactDOM.render(
   <Provider store={store}>
-    <PersonForm />
-    <ContactsList />
+    <PagePanel 
+      formClass='newPersonForm'
+      listClass='contactsList'
+    />
   </Provider>,
   document.getElementById('root')
 );

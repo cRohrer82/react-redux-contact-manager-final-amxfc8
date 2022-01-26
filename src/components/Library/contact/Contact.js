@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
 
-class Contact{
+function Contact() {
 
   defaultProps = {
     person: '',
@@ -10,12 +10,12 @@ class Contact{
   };
 
   
-  <>
+  {/*<>
     <div key={key} class="contactName"
       onClick={handleNameClick}>
       {value}
     </div>
-  </>
+  </>*/}
 }
 
 export default Contact;
