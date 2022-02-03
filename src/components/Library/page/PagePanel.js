@@ -1,16 +1,24 @@
 import React from "react";
-import ContactsList from '../contact/ContactsList';
-import PersonForm from '../form/PersonForm';
+import { ContactsList } from '../contact';
+import { AddForm } from '../form/Add';
 
-function PagePanel (props) {
+export const PagePanel = (props) => {
 
     return (
         <>
-            <div class={props.formClass}>
-                <PersonForm />
+            <div
+                class={props.formClass}
+            >
+
+                <AddForm />
+
             </div>
-            <div class={props.listClass}>
+            <div
+                class={props.listClass}
+            >
+
                 <ContactsList />
+                
             </div>
         </>
     );

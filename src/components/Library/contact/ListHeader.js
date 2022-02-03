@@ -1,6 +1,6 @@
 import React from "react";
 
-function ListHeader() {
+function ListHeader(props) {
   return (
   <>
     <div class="listHeader">

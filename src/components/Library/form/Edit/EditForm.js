@@ -1,23 +1,11 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
-import { addContact } from '../../../actions';
+import { addContact } from '../../../../actions';
 
-function PersonForm(props) {
+function EditForm(props) {
   const [person, setPerson] = useState('');
   const [address, setAddress] = useState('');
   const [number, setNumber] = useState('');
-
-  function handlePersonChange(e) {
-    setPerson(e.target.value);
-  }
-
-  function handleAddressChange(e) {
-    setAddress(e.target.value);
-  }
-
-  function handleNumberChange(e) {
-    setNumber(e.target.value);
-  }
 
   function handleSubmit(e) {
     if (person !== '') {
@@ -65,4 +53,4 @@ const mapDipatchToProps = {
   addContact,
 };
 
-export default connect(null, mapDipatchToProps)(PersonForm);
+export default connect(null, mapDipatchToProps)(EditForm);

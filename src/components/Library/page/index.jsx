@@ -1,3 +1,3 @@
-import PagePanel from "./PagePanel.js";
+import PagePanel from "./PagePanel";
 
 export { PagePanel };

@@ -9,6 +9,10 @@ ul {
 li {
   list-style-type: none;
 }
+
+body {
+  background-color: darkslategray;
+}
 div {
   list-style-type: none;
   background-color: rgba(61, 175, 150, 0.411);
@@ -65,6 +69,7 @@ div div {
 .contactPhoneNumber {
   border-bottom-style: groove;
   border-bottom-width: 3px;
+  margin-bottom: 1%;
 }
 
 .contactName:hover,
@@ -84,9 +89,8 @@ div div {
 .contactPhoneNumber:active {
   border-bottom-style: none;
   -webkit-transform: translate(0px, 3px);
+  margin-bottom: 1.2%;
   transform: translate(0px, 3px);
-  /*padding-left: 1%;
-  padding-right: 1%;*/
 }
 
 .contactsList {
@@ -98,6 +102,29 @@ div div {
   display: block;
   margin-bottom: 2.5%;
   width: 90%;
+}
+
+.listHeader {
+  width: 97.5%;
+}
+
+.listHeader_name,
+.listHeader_address,
+.listHeader_phoneNumber {
+  display: inline-block;
+}
+
+.listHeader_name {
+  margin-right: 32%;
+}
+
+.listHeader_address {
+  margin-right: 32%;
+}
+
+.listHeader_phoneNumber {
+  float: right;
+  margin-right: 1%;
 }
 
 .newPersonForm {

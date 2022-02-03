@@ -1,15 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
-import { ListHeader } from '.';
 
 function ContactsList(props) {
-  function handleNameClick(e) {}
 
-  const arr = props.contacts;
+  const arr0 = props.contacts;
   const arr1 = props.addresses;
   const arr2 = props.phoneNumbers;
-  const listContacts = arr.map((value, key) => (
-    <div key={key} class="contactName" onClick={handleNameClick}>
+  const listContacts = arr0.map((value, key) => (
+    <div key={key} class="contactName">
       {value}
     </div>
   ));
@@ -37,7 +35,11 @@ function ContactsList(props) {
 
   return (
     <>
-      <ListHeader />
+      <div class="listHeader">
+        <h2 class="listHeader_name">Name</h2>
+        <h2 class="listHeader_address">Address</h2>
+        <h2 class="listHeader_phoneNumber">Phone Number</h2>
+      </div>
       <ul>{returnList}</ul>
     </>
   );
